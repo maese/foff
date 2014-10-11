@@ -1,16 +1,77 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="es"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+html {height: 100%;}
+body {margin:0; padding:0;}
+
+
+/* Layout
+========================================================================== */
+*, *:before, *:after {-moz-box-sizing:border-box; border-box; box-sizing:border-box;}
+html {font-size:62.5%; height:100%;}
+body {font-size:14px; font-size:1.4rem; font-size:1.4rem; line-height:1.4; background-color:#f3f4f6; color:#4a4a4a; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+
+
+header, main, footer {width:960px; margin:0 auto; background-color:#fff; clear:both;}
+/* formularios */
+
+
+/* titulos */
+
+/* listados */
+ul, li {margin:0; padding:0; list-style-type:none;} 
+
+
+/* botones */
+
+/* Header
+========================================================================== */
+
+body > header {padding:17px; border-bottom:1px solid rgba(0,0,0,0.2);}
+
+#logo {float:left;}
+
+#menu_principal {line-height:32px; float:right;}  
+    #menu_principal li {float:left; margin:0 5px; min-width:80px;}
+    #menu_principal a {font-size:14px; font-size:1.4rem; color:#26934C; font-weight:bold; display:block; padding:0 7px; text-align:center; text-decoration:none; border: 2px solid #26934C; text-transform: none; border-radius:4px;}    
+    #menu_principal a:hover {background-color:#26934C; color:#fff;}
+    #menu_principal a.on {background-color:#26934C; color:#fff;}
+
+/* Footer
+========================================================================== */
+body > footer {border-top:1px solid rgba(0,0,0,0.2); padding:17px;}
+
+
+
+
+/* Main
+========================================================================== */
+
+
+
+
+/* Grid
+========================================================================== */
+    
+
+body {display: flex; flex-direction: column; min-height: 100vh;}
+main {flex: 1; display: flex; flex-direction: column;}
+.grid {display: flex; flex: 1;}
+.cell {flex: 1; margin-left:17px; padding:17px;} 
+.cell:first-child {margin-left:0;}
+
+.aside {max-width:350px; border-left:1px solid rgba(0,0,0,0.2);}
+
+header {background-color:red;}
+main {background-color:green;}
+footer {background-color:pink;}
+
+
+	</style>
 </head>
 <body>	
 
@@ -19,11 +80,11 @@
 		<a href="#" id="logo"><img src="img/logo.png"></a>
 		<nav id="menu_principal">
 			<ul>
-				<li><a href="index.html" class="on">Inicio</a></li>
-				<li><a href="ventajas.html">Ventajas</a></li>
-				<li><a href="marcas.html">Marcas</a></li>
-				<li><a href="como-funciona.html">¿Como funciona?</a></li>
-				<li><a href="acceso.html">Acceso Clientes</a></li>				
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Ventajas</a></li>
+				<li><a href="#">Marcas</a></li>
+				<li><a href="#">¿Como funciona?</a></li>
+				<li><a href="#">Acceso Clientes</a></li>				
 			</ul>
 		</nav>
 
