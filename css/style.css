@@ -95,25 +95,52 @@ html {font-size:62.5%; height:100%; overflow:-moz-scrollbars-vertical; overflow-
 body {font-size:14px; font-size:1.4rem; font-size:1.4rem; line-height:1.4; background-color:#f3f4f6; color:#4a4a4a; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
 a {color:#1858a4; text-decoration:none;}
 a:hover {color:#4d7eba;}
-
+img {max-width: 100%; height: auto;}
 
 header, main, footer {width:960px; margin:0 auto; background-color:#fff; clear:both;}
 
 /* formularios */
 
+input[type=text], input[type=password], textarea {border:1px solid #ababab; padding-left:5px; padding-right:5px; line-height:33px; box-shadow:inset 1px 1px 3px 0 rgba(0, 0, 0, 0.13);}
+
+.wrapSelect {background-color:#fff; width:100%; overflow:hidden; height:37px; line-height:35px; border:1px solid #ababab; position:relative;}
+    .wrapSelect select {width:140%; width:calc(100% + 28px); border:0 none; height:35px; line-height:1; padding-left:10px; padding-right:40px; font-size:14px; font-size:1.4rem; background:linear-gradient(to bottom,  rgba(238,238,238,0) 0%,rgba(238,238,238,1) 100%);}
+    .wrapSelect select option {height:35px; line-height:35px; padding-top:10px; padding-left:10px; font-size:14px; font-size:1.4rem; border:1px solid transparent;}    
+    .wrapSelect:after {content:" "; background-image:url(../img/sprite_png.png); background-position:-316px -267px; width:10px; height:6px; position:absolute; top:15px; right:12px;}
+    .wrapSelect.on:after {background-position:-316px -273px;} 
+
+
+
+
+
+
 
 /* titulos */
 
-h1 {font-family: 'Open Sans', sans-serif; font-weight:700; font-size:24px;}
-h2 {font-family: 'Open Sans', sans-serif; font-size:20px;}
-h3 {font-family: 'Open Sans', sans-serif; font-size:18px;}
-h4 {font-family: 'Open Sans', sans-serif; font-size:16px;}
+h1 {font-family:'Montserrat', sans-serif; font-weight:700; font-size:38px; text-shadow:1px 1px 1px rgba(255,255,255,0.6);}
+h2 {font-family:'Montserrat', sans-serif; font-weight:700; font-size:28px; margin:0;}
+h3 {font-family:'Montserrat', sans-serif; font-weight:400; font-size:24px;}
+h4 {font-family:'Montserrat', sans-serif; font-weight:400; font-size:18px;}
 
 
 
 /* listados */
 ul, li {margin:0; padding:0; list-style-type:none;} 
+.ul li {background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAADCAMAAABs6DXKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9QTFRFw8PD2NjY9fX1enp6SUlJdmbCWgAAABlJREFUeNpiYGJmYWZiYGBhYWFkALMBAgwAAYEAKnH85zEAAAAASUVORK5CYII='); background-position:0 8px; background-repeat:no-repeat; padding-left:10px;}
 
+.ul li li {margin-left:10px;}
+
+dl {margin:15px 0;}
+    dt {margin:0; width:120px; float: left; clear: left; color:#999999;}
+    dd {margin:5px 0 5px 125px; color:#444444;}
+
+
+/* tablas */
+    table {width:100%;}
+        thead th {text-align:left; padding:8px; background-image: linear-gradient(to bottom, #ffffff 0%,#ffffff 20%,#e6e6e6 20%,#e6e6e6 82%,#ffffff 82%,#ffffff 100%,#ffffff 100%); background-repeat:repeat-y; background-size: 1px 100%; border-bottom:3px solid #e6e6e6;}
+        thead th:first-child {background-image: none;}
+        tbody td {padding:8px; border-bottom:1px solid #e6e6e6;}
+        tbody th {padding:8px; border-bottom:1px solid #e6e6e6; text-align:left;}
 
 /* botones */
 
@@ -128,7 +155,7 @@ body > header {padding:17px; border-bottom:1px solid rgba(0,0,0,0.2);}
 
 #menu_principal {line-height:32px; float:right;}  
     #menu_principal li {float:left; margin:0 5px; min-width:80px;}
-    #menu_principal a {font-size:14px; font-size:1.4rem; color:#26934C; font-weight:bold; display:block; padding:0 7px; text-align:center; text-decoration:none; border: 2px solid #26934C; text-transform: none; border-radius:4px;}    
+    #menu_principal a {font-size:14px; font-size:1.4rem; color:#26934C; font-weight:bold; display:block; padding:0 7px; text-align:center; text-decoration:none; border:2px solid #26934C; text-transform:none; border-radius:4px;}    
     #menu_principal a:hover {background-color:#26934C; color:#fff;}
     #menu_principal a.on {background-color:#26934C; color:#fff;}
 
@@ -149,10 +176,10 @@ body > footer {border-top:1px solid rgba(0,0,0,0.2); padding:17px;}
 ========================================================================== */
     
 
-body {display: flex; flex-direction: column; min-height: 100vh;}
-main {flex: 1; display: flex; flex-direction: column;}
-.grid {display: flex; flex: 1;}
-.cell {flex: 1; margin-left:17px; padding:17px;} 
+body {display:flex; flex-direction:column; min-height:100vh;}
+main {flex:1; display:flex; flex-direction:column;}
+.grid {display:flex; flex:1;}
+.cell {flex:1; margin-left:17px; padding:17px;} 
 .cell:first-child {margin-left:0;}
 
 .aside {max-width:350px; border-left:1px solid rgba(0,0,0,0.2);}

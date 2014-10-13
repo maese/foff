@@ -88,9 +88,11 @@ $(document).ready(function() {
 		  },
 		error: function(XHR,textStatus,errorThrown) {
 			//alert ("XHR="+XHR+"\ntextStatus="+textStatus+"\nerrorThrown=" + errorThrown);
+      console.log(textStatus);
 		},
 		success: function(data,textStatus) {
 			//$("body").append(data);
+      console.log(textStatus);
 		},
 		headers: {
 			"source":"bac"
