@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="es"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>	
+
+	<!-- //// HEADER \\\\ -->
+    <header class="clearfix">
+		<a href="index.html" id="logo"><img src="img/logo.png"></a>
+		<nav id="menu_principal">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="formularios.html" class="on">Formularios</a></li>
+				<li><a href="componentes.html">Componentes</a></li>
+				<li><a href="helpers.html">Helpers</a></li>
+				<li><a href="enlaces.html">Enlaces</a></li>			
+			</ul>
+		</nav>
+
+    </header>
+    <!-- //// FIN HEADER \\\\ -->
+
+    <!-- //// MAIN \\\\ -->
+    <main class="clearfix grid">		
+        
+        <div class="cell">
+        
+            <h1>Formularios</h1>
+
+            <h2>Formulario width 100% - line break label</h2>
+            <form>
+                <label>
+                    <b>Name:</b> <input type="text">
+                </label>
+                <label>
+                    <b>Surname:</b> <input type="text">
+                </label>
+                <label>
+                    <b>Phone number:</b> <input type="text">
+                </label>
+            </form>
+            
+
+            <h2>Formulario width limit - inline label</h2>
+            <form class="inline" style="width:300px;">
+                <label>
+                    <b>Name:</b> <input type="text">
+                </label>
+                <label>
+                    <b>Surname:</b> <input type="text">
+                </label>
+                <label>
+                    <b>Phone number:</b> <input type="text">
+                </label>
+                <label>
+                    <b>Genero</b>
+                    <div class="wrapSelect" style="display:inline-block;">
+                        <select>
+                            <option>Seleccione</option>
+                            <option>Hombre</option>
+                            <option>Mujer</option>
+                        </select>
+                    </div>
+                </label>
+            </form>
+
+
+            <h2>Formulario width 100% - inline label</h2>
+            <form style="width:300px;">
+                <label>
+                    <b>Name:</b> <input type="text">
+                </label>
+                <label>
+                    <b>Surname:</b> <input type="text">
+                </label>
+                <label>
+                    <b>Phone number:</b> <input type="text">
+                </label>
+                <label>
+                    <b>Genero</b>
+                    <div class="wrapSelect" style="display:inline-block;">
+                        <select>
+                            <option>Seleccione</option>
+                            <option>Hombre</option>
+                            <option>Mujer</option>
+                        </select>
+                    </div>
+                </label>
+                <div class="label">
+                    <strong>Comunidades</strong>
+                </div>
+                <div class="check label">
+                    <input id="andalucia" name="andalucia" type="checkbox">
+                    <label for="andalucia">ANDALUCÍA</label>
+                </div>
+                <div class="check label">
+                    <input id="cm" name="cm" type="checkbox">
+                    <label for="cm">CASTILLA LA MANCHA</label>
+                </div>
+
+                <div class="label">
+                    <strong>Pago</strong>
+                </div>
+                <div class="check label">
+                    <input id="paypal" name="pago" type="radio">
+                    <label for="paypal" class="radio">PayPal</label>
+                </div>
+                <div class="check label">
+                    <input id="visa" name="pago" type="radio">
+                    <label for="visa" class="radio">Visa</label>
+                </div>
+                <div class="label">
+                    <strong>Pago inline</strong>
+                </div>
+                <div class="check label">
+                    <input id="paypal" name="pago" type="radio">
+                    <label for="paypal" class="radio">PayPal</label>
+
+                    <input id="visa" name="pago" type="radio">
+                    <label for="visa" class="radio">Visa</label>                    
+                </div>
+
+                <label>
+                    <b>Textarea</b>
+                    <textarea></textarea>
+                </label>
+
+
+                <div class="botonera">
+                    <a href="#" class="btn">Aceptar</a>
+                    <a href="#" class="btn cancel">Aceptar</a>
+                    <input type="button" class="btn" value="Aceptar">
+                </div>
+
+
+            </form>
+
+
+            <h2>Formulario grid</h2>
+            <form>
+                <div class="row-formu grid">
+                    <label style="max-width:120px;">
+                        <b>Name:</b> <input type="text">
+                    </label>
+                    <label>
+                        <b>Surname:</b> <input type="text">
+                    </label>
+                    <label>
+                        <b>Phone number:</b> <input type="text">
+                    </label>
+                </div>
+                <div class="row-formu grid">
+                    <label style="max-width:120px;">
+                        <b>Name:</b> <input type="text">
+                    </label>
+                    <label>
+                        <b>Surname:</b> <input type="text">
+                    </label>
+                    <label>
+                        <b>Phone number:</b> <input type="text">
+                    </label>
+                </div>
+                <div class="row-formu grid">
+                    <label style="max-width:120px;">
+                        <b>Name:</b> <input type="text">
+                    </label>
+                    <div class="check label">
+                        <strong>Lorem ipsum</strong>
+                        <input id="paypal" name="pago" type="radio">
+                        <label for="paypal" class="radio">PayPal</label>
+
+                        <input id="visa" name="pago" type="radio">
+                        <label for="visa" class="radio">Visa</label>                    
+                    </div>
+                    <label>
+                        <b>Phone number:</b> 
+                        <div class="wrapSelect" style="display:inline-block;">
+                            <select>
+                                <option>Seleccione</option>
+                                <option>Hombre</option>
+                                <option>Mujer</option>
+                            </select>
+                        </div>
+                    </label>
+                </div>                
+            </form>
+
+
+            <h2>Formulario grid inline</h2>
+            <form class="inline">
+                <div class="row-formu grid">
+                    <label>
+                        <b>Name:</b> <input type="text">
+                    </label>
+                    <label>
+                        <b>Surname:</b> <input type="text">
+                    </label>
+                    <label>
+                        <b>Phone number:</b> <input type="text">
+                    </label>
+                </div>
+                <div class="row-formu grid">
+                    <label>
+                        <b>Name:</b> <input type="text">
+                    </label>
+                    <label>
+                        <b>Surname:</b> <input type="text">
+                    </label>
+                    <label>
+                        <b>Phone number:</b> <input type="text">
+                    </label>
+                </div>
+            </form>
+
+
+
+
+
+
+            <hr>
+
+
+<!--     
+            <div class="formu"><form action="">
+
+                <div>
+                    <label>
+                        Input
+                        <input type="text">
+                        <span id="headerAgentInfoDetailsPhone">xxxx</span>
+                    </label>
+                </div>
+
+                <div>
+                    <label for="">Input</label>
+                    <input type="password">                        
+                </div>
+
+                <div>
+                    <label for="">Input</label>
+                    <select name="" id="">
+                        <option value="">Lorem ipsum</option>
+                        <option value="">Lorem ipsum</option>
+                        <option value="">Lorem ipsum</option>
+                    </select>
+                </div>
+
+                <div>                   
+                    <input type="radio"> <label for="">Radio</label>
+                </div>
+
+                <div>                   
+                    <input type="checkbox"> <label for="">Radio</label>
+                </div>
+
+            </form></div>
+
+ -->
+
+        </div>
+        <div class="cell aside">
+            
+        </div>        
+
+    </main>
+    <!-- //// FIN MAIN \\\\ -->
+
+    <!-- //// FOOTER \\\\ -->
+    <footer class="clearfix">
+        <p>footer</p>            
+    </footer>
+    <!-- //// FIN FOOTER \\\\ -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>        
+    <script src="js/main.js"></script>
+
+</body>
+</html>
