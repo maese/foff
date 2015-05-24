@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+
+    html {height:100%;}
+    body {min-height:100vh; margin:0; padding:0;}
+
+
+#flexContainer { 
+  display: flex;
+  flex-direction: column;
+  min-height:100vh;
+} 
+
+
+#item1 {
+  width: 120px;
+  background:red;
+  
+}
+#item2 {
+  width: 120px;
+  background:#00A6EE;
+  
+  flex:1 0 0;
+}
+#item3 {
+  width: 120px;
+  background:#6ABD27;
+  
+}
+
+	</style>
+</head>
+<body>	
+
+
+
+<div id="flexContainer">
+   <div id="item1">1</div>
+   <div id="item2">2</div>
+   <div id="item3">3</div>
+</div>
+
+
+
+
+
+
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>        
+    <script src="js/main.js"></script>
+
+</body>
+</html>
